@@ -1,3 +1,3 @@
 # fmi-intro-to-programming-practicum-g5-2023-2024
 
-Link placeholder
+[Линк към заданието от седмица 1](https://classroom.github.com/a/cKQrJJYP)
