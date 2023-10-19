@@ -193,41 +193,6 @@ do {
 <br>
 <br>
 
-
-
-
-<table>
-<tr>
-<td>
-
-```c++
-char c = '0';
-while(c != '0') {
-   std::cout << c << std::endl;
-}
-```
-
-</td>
-<td>
-   ->
-</td>
-<td>
-
-???
-
-</td>
-</tr>
-</table>
-<br>
-<br>
-<br>
-
----
-
-<br>
-<br>
-<br>
-
 # Задачи
 
 ## Задача 1
