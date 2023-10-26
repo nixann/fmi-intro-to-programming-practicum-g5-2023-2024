@@ -15,7 +15,6 @@ int main() {
 	int firstDigit = temporary;
 	int lastDigit = n % 10;
 
-	// Why no unsigned here?
 	n = n + (-firstDigit + lastDigit) * powerOf10;
 	n = n + (-lastDigit + firstDigit);
 
