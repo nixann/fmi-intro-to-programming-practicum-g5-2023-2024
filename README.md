@@ -6,3 +6,4 @@
 - [Github classroom week 4](https://classroom.github.com/a/plAMs1TW)
 - [Github classroom week 5](https://classroom.github.com/a/40OWx_TX)
 - [Github classroom week 6](https://classroom.github.com/a/Dv2ZgCA6)
+- [Github classroom week 7](https://classroom.github.com/a/Ahh2x60A)
