@@ -8,13 +8,31 @@ void shiftLeft(char* sentence) {
 	}
 }
 
+bool startsWith(char* haystack, char* needle) {
+	while (*haystack && *needle) {
+		if (*haystack != *needle) return false;
+		haystack++;
+		needle++;
+	}
+
+	// !!!
+	if (!*needle && (!*haystack || *haystack == ' ')) return true;
+	return false;
+}
+
 void deleteIntruder(char* sentence, char* intruder) {
 	// Този assert е, за да се махнат предупрежденията от компилатора, не е съществен
 	assert(sentence != nullptr);
 
 	while (*sentence) {
-		// т.е. ако намерим търсената дума и тя започва от мястото, където сме в момента
-		if (sentence == std::strstr(sentence, intruder)) {
+		// Тук ще проверяваме дали сме намерим търсената дума и дали тя започва от мястото, където сме в момента
+		
+		// !!! Помислете защо няма да бъде вярно, ако напишем:
+		//		if (sentence == std::strstr(sentence, intruder)) { ... }
+
+		// Hint: ако текущата дума е напр. carpenter, а търсената е car, програмата ще изтрие част от carpenter, което не е вярно по условие
+
+		if (startsWith(sentence, intruder)) {
 			int numLettersToDelete = std::strlen(intruder) + 1;
 			// Нали искаме да изтрием и интервала след дадената дума
 			// Затова гледаме ако се натъкнем след думата на края на низа, не трием повече от дължината
@@ -30,8 +48,8 @@ void deleteIntruder(char* sentence, char* intruder) {
 }
 
 int main() {
-	char str[] = "noot now this noot noot sentence noot is normal noot";
-	char intruder[] = "noot";
+	char str[] = "no now this no no sentence no is normal no";
+	char intruder[] = "no";
 	deleteIntruder(str, intruder);
 	std::cout << str << std::endl;
 }
