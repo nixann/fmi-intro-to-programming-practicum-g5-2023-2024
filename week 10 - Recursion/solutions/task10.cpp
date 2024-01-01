@@ -2,7 +2,8 @@
 
 // Това е решението, което казахме на практикума. То всъщност е грешно...
 // Помислете защо не работи, каква допълнителна информация е нужна
-/*void wrong(char* src, unsigned srcLength, unsigned length) {
+/*
+void wrong(char* src, unsigned srcLength, unsigned length) {
 	if (!length) {
 		std::cout << std::endl;
 		return;
@@ -11,7 +12,8 @@
 		std::cout << src[i];
 		wrong(src, srcLength, length - 1);
 	}
-}*/
+}
+*/
 
 // Ето го и правилното решение
 // Проблемът в горното решение е, че като отпечатаме дума и след това променим даден символ,

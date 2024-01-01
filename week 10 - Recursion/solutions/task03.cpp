@@ -19,10 +19,12 @@ bool hasPrime(unsigned* arr, int length) {
 }
 
 // Алтернативен начин:
-/*bool hasPrime(unsigned* arr, int length) {
+/*
+bool hasPrime(unsigned* arr, int length) {
 	if (!length) return false;
 	return isPrime(*arr) || hasPrime(arr + 1, length - 1);
-}*/
+}
+*/
 
 int main() {
 	unsigned arr[] = { 1, 4, 101, 8 };

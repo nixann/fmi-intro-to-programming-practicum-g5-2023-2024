@@ -12,10 +12,12 @@ bool member(int* arr, int length, int ele) {
 }
 
 // Алтернативен начин без използване на индекс:
-/*bool member(int* arr, int length, int ele) {
+/*
+bool member(int* arr, int length, int ele) {
 	if (!length) return false;
 	return *arr == ele || member(arr + 1, length - 1, ele);
-}*/
+}
+*/
 
 int main() {
 	int arr[] = { 1, 3, 5, -3, 7 };
